@@ -7,15 +7,15 @@
         <script src="https://unpkg.com/alpinejs" defer></script>
         <title>Dashboard - Version 3</title>
     </head>
-    <body class="bg-gray-50/50 text-gray-900 md:px-0 px-3 pb-80 relative">
+    <body class="bg-gray-50/50 text-gray-900  pb-20 md:px-0 px-3 relative overflow-x-hidden">
         <main class="grid grid-cols-1 md:grid-cols-12 gap-10">
             <div class="lg:col-span-2 md:col-span-1 hidden md:block h-full">
-                <div class="h-full md:overflow-y-hidden bg-black/90 flex flex-col p-5 text-gray-300 space-y-5">
+                <div class="h-full md:overflow-y-hidden bg-black/90 flex flex-col p-5 text-gray-400 space-y-5">
                     <h2 class="text-xl font-bold">Logo</h2>
-                    <a href="/">Version 1</a>
-                    <a href="version2.html">Version 2</a>
-                    <a href="/version3.html">Version 3</a>
-                    <a href="/version4.html">Version 4</a>
+                    <a href="/" class="flex gap-2"><span class="lg:block md:hidden">Version</span> 1</a>
+                    <a href="version2.html" class="flex gap-2"><span class="lg:block md:hidden">Version</span> 2</a>
+                    <a href="/version3.html" class="flex gap-2 text-white font-medium"><span class="lg:block md:hidden">Version</span> 3</a>
+                    <a href="/version4.html" class="flex gap-2"><span class="lg:block md:hidden">Version</span> 4</a>
                 </div>
             </div>
             <div class="lg:col-span-10 md:col-span-11 md:pr-10 flex flex-col space-y-10">
@@ -68,7 +68,7 @@
                 <div class="space-y-3">
                     <div class="flex items-center justify-between space-x-5">
                         <div>
-                            <h1 class="text-base font-semibold text-gray-600">Business & personal accounts</h1>
+                            <h1 class="text-base font-semibold">Business & personal accounts</h1>
                             <div class="flex items-center justify-start space-x-1">
                                 <span>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
@@ -79,7 +79,7 @@
                                 <p class="text-xs text-gray-500">Tap/click on an account to view it's details</p>
                             </div>
                         </div>
-                        <div class="text-sm font-bold flex items-center justify-end space-x-2">
+                        <div class="text-sm font-bold flex items-center justify-end space-x-2 md:block hidden">
                             <span>1 USD = 0.86 GBP</span>
                             <span>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
@@ -600,5 +600,16 @@
                 <!-- end of transaction section -->
             </div>
         </main>
+
+        <div class="md:hidden block">
+            <div class="fixed left-0 right-0 bottom-0 bg-black py-3 px-5">
+                <div class="w-full flex items-center justify-between text-gray-400 text-[10px]"">
+                    <a href="index.html">Version 1</a>
+                    <a href="version2.html">Version 2</a>
+                    <a href="version3.html" class="text-white font-medium">Version 3</a>
+                    <a href="version4.html">Version 4</a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
